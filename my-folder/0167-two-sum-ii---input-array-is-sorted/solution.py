@@ -4,13 +4,13 @@ class Solution:
         right_pointer = len(numbers) - 1
 
         while right_pointer > left_pointer:
-            current_sum = numbers[right_pointer] + numbers[left_pointer]
+            current_two_sum = numbers[left_pointer] + numbers[right_pointer]
 
-            if current_sum > target:
+            if current_two_sum > target:
                 right_pointer -= 1
-            elif current_sum < target:
+            elif current_two_sum < target:
                 left_pointer += 1
-            elif current_sum == target:
+            elif current_two_sum == target:
                 return [left_pointer + 1, right_pointer + 1]
 
         
