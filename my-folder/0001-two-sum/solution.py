@@ -6,7 +6,3 @@ class Solution:
             if difference in previous_map:
                 return [previous_map[difference], index]
             previous_map[number] = index
-
-       
-
-         
